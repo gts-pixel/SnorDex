@@ -12,14 +12,12 @@
     "genderRatio" : "87.5% male, 12.5% female",
     "catchRate" : "45 (5.9% with PokéBall, full HP)",
     "baseExp" : "64",
-    "Stat" : {
-        "hp": 45, 
-        "atk": 49, 
-        "def": 49, 
-        "spA": 65, 
-        "spD": 65, 
-        "spe": 45
-    }    
+    "hp": 45, 
+    "atk": 49, 
+    "def": 49, 
+    "spA": 65, 
+    "spD": 65, 
+    "spe": 45  
   },
   {
     "id": 4,
@@ -34,16 +32,14 @@
     "genderRatio": "87.5% male, 12.5% female",
     "catchRate": "45 (5.9% with PokéBall, full HP)",
     "baseExp": "62",
-    "Stat": {
-        "hp": 39,
-        "atk": 52,
-        "def": 43,
-        "spA": 60,
-        "spD": 50,
-        "spe": 65
-    }
-    },
-    {
+    "hp": 39,
+    "atk": 52,
+    "def": 43,
+    "spA": 60,
+    "spD": 50,
+    "spe": 65
+  },
+   {
     "id": 7,
     "name": "Squirtle",
     "types": "Water",
@@ -56,15 +52,13 @@
     "genderRatio": "87.5% male, 12.5% female",
     "catchRate": "45 (5.9% with PokéBall, full HP)",
     "baseExp": "63",
-    "Stat": {
-        "hp": 44,
-        "atk": 48,
-        "def": 65,
-        "spA": 50,
-        "spD": 64,
-        "spe": 43
-    }
-    },
+    "hp": 44,
+    "atk": 48,
+    "def": 65,
+    "spA": 50,
+    "spD": 64,
+    "spe": 43
+   },
     {
     "id": 25,
     "name": "Pikachu",
@@ -78,14 +72,12 @@
     "genderRatio": "50% male, 50% female",
     "catchRate": "190 (24.8% with PokéBall, full HP)",
     "baseExp": "112",
-    "Stat": {
-        "hp": 35,
-        "atk": 55,
-        "def": 40,
-        "spA": 50,
-        "spD": 50,
-        "spe": 90
-    }
+    "hp": 35,
+    "atk": 55,
+    "def": 40,
+    "spA": 50,
+    "spD": 50,
+    "spe": 90
     },
     {
     "id": 39,
@@ -100,14 +92,12 @@
     "genderRatio": "25% male, 75% female",
     "catchRate": "170 (22.2% with PokéBall, full HP)",
     "baseExp": "95",
-    "Stat": {
-        "hp": 115,
-        "atk": 45,
-        "def": 20,
-        "spA": 45,
-        "spD": 25,
-        "spe": 20
-    }
+    "hp": 115,
+    "atk": 45,
+    "def": 20,
+    "spA": 45,
+    "spD": 25,
+    "spe": 20
     },
     {
     "id": 52,
@@ -122,14 +112,12 @@
     "genderRatio": "50% male, 50% female",
     "catchRate": "255 (33.3% with PokéBall, full HP)",
     "baseExp": "58",
-    "Stat": {
-        "hp": 40,
-        "atk": 45,
-        "def": 35,
-        "spA": 40,
-        "spD": 40,
-        "spe": 90
-    }
+    "hp": 40,
+    "atk": 45,
+    "def": 35,
+    "spA": 40,
+    "spD": 40,
+    "spe": 90
     },
     {
     "id": 133,
@@ -144,14 +132,12 @@
     "genderRatio": "87.5% male, 12.5% female",
     "catchRate": "45 (5.9% with PokéBall, full HP)",
     "baseExp": "65",
-    "Stat": {
-        "hp": 55,
-        "atk": 55,
-        "def": 50,
-        "spA": 45,
-        "spD": 65,
-        "spe": 55
-    }
+    "hp": 55,
+    "atk": 55,
+    "def": 50,
+    "spA": 45,
+    "spD": 65,
+    "spe": 55
     },
     {
     "id": 143,
@@ -166,14 +152,12 @@
     "genderRatio": "87.5% male, 12.5% female",
     "catchRate": "25 (3.3% with PokéBall, full HP)",
     "baseExp": "189",
-    "Stat": {
-        "hp": 160,
-        "atk": 110,
-        "def": 65,
-        "spA": 65,
-        "spD": 110,
-        "spe": 30
-    }
+    "hp": 160,
+    "atk": 110,
+    "def": 65,
+    "spA": 65,
+    "spD": 110,
+    "spe": 30
     },
     {
     "id": 152,
@@ -188,14 +172,12 @@
     "genderRatio": "87.5% male, 12.5% female",
     "catchRate": "45 (5.9% with PokéBall, full HP)",
     "baseExp": "64",
-    "Stat": {
-        "hp": 45,
-        "atk": 49,
-        "def": 65,
-        "spA": 49,
-        "spD": 65,
-        "spe": 45
-    }
+    "hp": 45,
+    "atk": 49,
+    "def": 65,
+    "spA": 49,
+    "spD": 65,
+    "spe": 45
     },
     {
     "id": 155,
@@ -210,13 +192,11 @@
     "genderRatio": "87.5% male, 12.5% female",
     "catchRate": "45 (5.9% with PokéBall, full HP)",
     "baseExp": "62",
-    "Stat": {
-        "hp": 39,
-        "atk": 52,
-        "def": 43,
-        "spA": 60,
-        "spD": 50,
-        "spe": 65
-    }
+    "hp": 39,
+    "atk": 52,
+    "def": 43,
+    "spA": 60,
+    "spD": 50,
+    "spe": 65
     }
 ]
