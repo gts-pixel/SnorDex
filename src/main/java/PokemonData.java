@@ -1,7 +1,8 @@
 public class PokemonData {
     public int id;
-    public String name, types;
+    public String name, types, gen;
     public int total, hp, atk, def, spA, spD, spe;
+    public String ability, height, weight, hiddenAbility;
 
     public PokemonData(int id, String name, String types,
                           int total, int hp, int atk, int def, int spA, int spD, int spe) {

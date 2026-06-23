@@ -1,12 +1,132 @@
 [
-  {"id": 1,   "name": "Bulbasaur",  "types": "Grass/Poison", "hp": 45, "atk": 49, "def": 49, "spA": 65, "spD": 65, "spe": 45},
-  {"id": 4,   "name": "Charmander", "types": "Fire",         "hp": 39, "atk": 52, "def": 43, "spA": 60, "spD": 50, "spe": 65},
-  {"id": 7,   "name": "Squirtle",   "types": "Water",        "hp": 44, "atk": 48, "def": 65, "spA": 50, "spD": 64, "spe": 43},
-  {"id": 25,  "name": "Pikachu",    "types": "Electric",     "hp": 35, "atk": 55, "def": 40, "spA": 50, "spD": 50, "spe": 90},
-  {"id": 39,  "name": "Jigglypuff", "types": "Normal/Fairy", "hp": 115,"atk": 45, "def": 20, "spA": 45, "spD": 25, "spe": 20},
-  {"id": 52,  "name": "Meowth",     "types": "Normal",       "hp": 40, "atk": 45, "def": 35, "spA": 40, "spD": 40, "spe": 90},
-  {"id": 133, "name": "Eevee",      "types": "Normal",       "hp": 55, "atk": 55, "def": 50, "spA": 45, "spD": 65, "spe": 55},
-  {"id": 143, "name": "Snorlax",    "types": "Normal",       "hp": 160,"atk": 110,"def": 65, "spA": 65, "spD": 110,"spe": 30},
-  {"id": 152, "name": "Chikorita",  "types": "Grass",        "hp": 45, "atk": 49, "def": 65, "spA": 49, "spD": 65, "spe": 45},
-  {"id": 155, "name": "Cyndaquil",  "types": "Fire",         "hp": 39, "atk": 52, "def": 43, "spA": 60, "spD": 50, "spe": 65}
+  {
+    "id": 1,   
+    "name": "Bulbasaur",  
+    "types": "Grass/Poison", 
+    "Stat" : {
+        "hp": 45, 
+        "atk": 49, 
+        "def": 49, 
+        "spA": 65, 
+        "spD": 65, 
+        "spe": 45
+    }    
+  },
+  {
+    "id": 4,   
+    "name": "Charmander", 
+    "types": "Fire", 
+    "Stat" : {        
+        "hp": 39, 
+        "atk": 52, 
+        "def": 43, 
+        "spA": 60, 
+        "spD": 50, 
+        "spe": 65
+        }
+    },
+  {
+    "id": 7,   
+    "name": "Squirtle",   
+    "types": "Water",        
+    "Stat" : {
+        "hp": 44, 
+        "atk": 48, 
+        "def": 65, 
+        "spA": 50, 
+        "spD": 64, 
+        "spe": 43
+        }
+    },
+  {
+    "id": 25,  
+    "name": "Pikachu",    
+    "types": "Electric",     
+    "Stat" : {
+        "hp": 35, 
+        "atk": 55, 
+        "def": 40, 
+        "spA": 50, 
+        "spD": 50, 
+        "spe": 90
+        }
+    },
+  {
+    "id": 39,  
+    "name": "Jigglypuff", 
+    "types": "Normal/Fairy", 
+    "Stat" : {
+        "hp": 115,
+        "atk": 45, 
+        "def": 20, 
+        "spA": 45, 
+        "spD": 25, 
+        "spe": 20
+        }
+    },
+  {
+    "id": 52,  
+    "name": "Meowth",     
+    "types": "Normal",       
+    "Stat" : {
+        "hp": 40, 
+        "atk": 45, 
+        "def": 35, 
+        "spA": 40, 
+        "spD": 40, 
+        "spe": 90
+        }
+    },
+  {
+    "id": 133, 
+    "name": "Eevee",      
+    "types": "Normal",       
+    "Stat" : {
+        "hp": 55, 
+        "atk": 55, 
+        "def": 50, 
+        "spA": 45, 
+        "spD": 65, 
+        "spe": 55
+        }
+    },
+  {
+    "id": 143, 
+    "name": "Snorlax",    
+    "types": "Normal",       
+    "Stat" : {
+        "hp": 160,
+        "atk": 110,
+        "def": 65, 
+        "spA": 65, 
+        "spD": 110,
+        "spe": 30
+        }
+    },
+  {
+    "id": 152, 
+    "name": "Chikorita",  
+    "types": "Grass",        
+    "Stat" : {
+        "hp": 45, 
+        "atk": 49, 
+        "def": 65, 
+        "spA": 49, 
+        "spD": 65, 
+        "spe": 45
+        }
+    },
+  {
+    "id": 155, 
+    "name": "Cyndaquil",  
+    "types": "Fire",         
+    "Stat" : {
+        "hp": 39, 
+        "atk": 52, 
+        "def": 43, 
+        "spA": 60, 
+        "spD": 50, 
+        "spe": 65
+        }
+    }
 ]
