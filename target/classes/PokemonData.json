@@ -3,6 +3,15 @@
     "id": 1,   
     "name": "Bulbasaur",  
     "types": "Grass/Poison", 
+    "spesies" : "Seed Pokemon",
+    "height" : "0.7m (2′04″)",
+    "weight" : "6.9 kg (15.2 lbs)",
+    "ability" : "Overgrow",
+    "hiddenAbility" : "Chlorophyll",
+    "eggGroup" : "Grass, Monster",
+    "genderRatio" : "87.5% male, 12.5% female",
+    "catchRate" : "45 (5.9% with PokéBall, full HP)",
+    "baseExp" : "64",
     "Stat" : {
         "hp": 45, 
         "atk": 49, 
@@ -13,120 +22,201 @@
     }    
   },
   {
-    "id": 4,   
-    "name": "Charmander", 
-    "types": "Fire", 
-    "Stat" : {        
-        "hp": 39, 
-        "atk": 52, 
-        "def": 43, 
-        "spA": 60, 
-        "spD": 50, 
+    "id": 4,
+    "name": "Charmander",
+    "types": "Fire",
+    "spesies": "Lizard Pokemon",
+    "height": "0.6m (2′00″)",
+    "weight": "8.5 kg (18.7 lbs)",
+    "ability": "Blaze",
+    "hiddenAbility": "Solar Power",
+    "eggGroup": "Monster, Dragon",
+    "genderRatio": "87.5% male, 12.5% female",
+    "catchRate": "45 (5.9% with PokéBall, full HP)",
+    "baseExp": "62",
+    "Stat": {
+        "hp": 39,
+        "atk": 52,
+        "def": 43,
+        "spA": 60,
+        "spD": 50,
         "spe": 65
-        }
+    }
     },
-  {
-    "id": 7,   
-    "name": "Squirtle",   
-    "types": "Water",        
-    "Stat" : {
-        "hp": 44, 
-        "atk": 48, 
-        "def": 65, 
-        "spA": 50, 
-        "spD": 64, 
+    {
+    "id": 7,
+    "name": "Squirtle",
+    "types": "Water",
+    "spesies": "Tiny Turtle Pokemon",
+    "height": "0.5m (1′08″)",
+    "weight": "9.0 kg (19.8 lbs)",
+    "ability": "Torrent",
+    "hiddenAbility": "Rain Dish",
+    "eggGroup": "Monster, Water 1",
+    "genderRatio": "87.5% male, 12.5% female",
+    "catchRate": "45 (5.9% with PokéBall, full HP)",
+    "baseExp": "63",
+    "Stat": {
+        "hp": 44,
+        "atk": 48,
+        "def": 65,
+        "spA": 50,
+        "spD": 64,
         "spe": 43
-        }
+    }
     },
-  {
-    "id": 25,  
-    "name": "Pikachu",    
-    "types": "Electric",     
-    "Stat" : {
-        "hp": 35, 
-        "atk": 55, 
-        "def": 40, 
-        "spA": 50, 
-        "spD": 50, 
+    {
+    "id": 25,
+    "name": "Pikachu",
+    "types": "Electric",
+    "spesies": "Mouse Pokemon",
+    "height": "0.4m (1′04″)",
+    "weight": "6.0 kg (13.2 lbs)",
+    "ability": "Static",
+    "hiddenAbility": "Lightning Rod",
+    "eggGroup": "Field, Fairy",
+    "genderRatio": "50% male, 50% female",
+    "catchRate": "190 (24.8% with PokéBall, full HP)",
+    "baseExp": "112",
+    "Stat": {
+        "hp": 35,
+        "atk": 55,
+        "def": 40,
+        "spA": 50,
+        "spD": 50,
         "spe": 90
-        }
+    }
     },
-  {
-    "id": 39,  
-    "name": "Jigglypuff", 
-    "types": "Normal/Fairy", 
-    "Stat" : {
+    {
+    "id": 39,
+    "name": "Jigglypuff",
+    "types": "Normal/Fairy",
+    "spesies": "Balloon Pokemon",
+    "height": "0.5m (1′08″)",
+    "weight": "5.5 kg (12.1 lbs)",
+    "ability": "Cute Charm",
+    "hiddenAbility": "Friend Guard",
+    "eggGroup": "Fairy",
+    "genderRatio": "25% male, 75% female",
+    "catchRate": "170 (22.2% with PokéBall, full HP)",
+    "baseExp": "95",
+    "Stat": {
         "hp": 115,
-        "atk": 45, 
-        "def": 20, 
-        "spA": 45, 
-        "spD": 25, 
+        "atk": 45,
+        "def": 20,
+        "spA": 45,
+        "spD": 25,
         "spe": 20
-        }
+    }
     },
-  {
-    "id": 52,  
-    "name": "Meowth",     
-    "types": "Normal",       
-    "Stat" : {
-        "hp": 40, 
-        "atk": 45, 
-        "def": 35, 
-        "spA": 40, 
-        "spD": 40, 
+    {
+    "id": 52,
+    "name": "Meowth",
+    "types": "Normal",
+    "spesies": "Scratch Cat Pokemon",
+    "height": "0.4m (1′04″)",
+    "weight": "4.2 kg (9.3 lbs)",
+    "ability": "Pickup",
+    "hiddenAbility": "Unnerve",
+    "eggGroup": "Field",
+    "genderRatio": "50% male, 50% female",
+    "catchRate": "255 (33.3% with PokéBall, full HP)",
+    "baseExp": "58",
+    "Stat": {
+        "hp": 40,
+        "atk": 45,
+        "def": 35,
+        "spA": 40,
+        "spD": 40,
         "spe": 90
-        }
+    }
     },
-  {
-    "id": 133, 
-    "name": "Eevee",      
-    "types": "Normal",       
-    "Stat" : {
-        "hp": 55, 
-        "atk": 55, 
-        "def": 50, 
-        "spA": 45, 
-        "spD": 65, 
+    {
+    "id": 133,
+    "name": "Eevee",
+    "types": "Normal",
+    "spesies": "Evolution Pokemon",
+    "height": "0.3m (1′00″)",
+    "weight": "6.5 kg (14.3 lbs)",
+    "ability": "Run Away",
+    "hiddenAbility": "Anticipation",
+    "eggGroup": "Field",
+    "genderRatio": "87.5% male, 12.5% female",
+    "catchRate": "45 (5.9% with PokéBall, full HP)",
+    "baseExp": "65",
+    "Stat": {
+        "hp": 55,
+        "atk": 55,
+        "def": 50,
+        "spA": 45,
+        "spD": 65,
         "spe": 55
-        }
+    }
     },
-  {
-    "id": 143, 
-    "name": "Snorlax",    
-    "types": "Normal",       
-    "Stat" : {
+    {
+    "id": 143,
+    "name": "Snorlax",
+    "types": "Normal",
+    "spesies": "Sleeping Pokemon",
+    "height": "2.1m (6′11″)",
+    "weight": "460.0 kg (1014.1 lbs)",
+    "ability": "Immunity",
+    "hiddenAbility": "Gluttony",
+    "eggGroup": "Monster",
+    "genderRatio": "87.5% male, 12.5% female",
+    "catchRate": "25 (3.3% with PokéBall, full HP)",
+    "baseExp": "189",
+    "Stat": {
         "hp": 160,
         "atk": 110,
-        "def": 65, 
-        "spA": 65, 
+        "def": 65,
+        "spA": 65,
         "spD": 110,
         "spe": 30
-        }
+    }
     },
-  {
-    "id": 152, 
-    "name": "Chikorita",  
-    "types": "Grass",        
-    "Stat" : {
-        "hp": 45, 
-        "atk": 49, 
-        "def": 65, 
-        "spA": 49, 
-        "spD": 65, 
+    {
+    "id": 152,
+    "name": "Chikorita",
+    "types": "Grass",
+    "spesies": "Leaf Pokemon",
+    "height": "0.9m (2′11″)",
+    "weight": "6.4 kg (14.1 lbs)",
+    "ability": "Overgrow",
+    "hiddenAbility": "Leaf Guard",
+    "eggGroup": "Monster, Grass",
+    "genderRatio": "87.5% male, 12.5% female",
+    "catchRate": "45 (5.9% with PokéBall, full HP)",
+    "baseExp": "64",
+    "Stat": {
+        "hp": 45,
+        "atk": 49,
+        "def": 65,
+        "spA": 49,
+        "spD": 65,
         "spe": 45
-        }
+    }
     },
-  {
-    "id": 155, 
-    "name": "Cyndaquil",  
-    "types": "Fire",         
-    "Stat" : {
-        "hp": 39, 
-        "atk": 52, 
-        "def": 43, 
-        "spA": 60, 
-        "spD": 50, 
+    {
+    "id": 155,
+    "name": "Cyndaquil",
+    "types": "Fire",
+    "spesies": "Fire Mouse Pokemon",
+    "height": "0.5m (1′08″)",
+    "weight": "7.9 kg (17.4 lbs)",
+    "ability": "Blaze",
+    "hiddenAbility": "Flash Fire",
+    "eggGroup": "Field",
+    "genderRatio": "87.5% male, 12.5% female",
+    "catchRate": "45 (5.9% with PokéBall, full HP)",
+    "baseExp": "62",
+    "Stat": {
+        "hp": 39,
+        "atk": 52,
+        "def": 43,
+        "spA": 60,
+        "spD": 50,
         "spe": 65
-        }
+    }
     }
 ]

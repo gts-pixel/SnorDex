@@ -1,6 +1,6 @@
 public class PokemonData {
     public int id;
-    public String name, types, gen;
+    public String name, types, spesies, eggGroup, genderRatio, catchRate, baseExp;
     public int total, hp, atk, def, spA, spD, spe;
     public String ability, height, weight, hiddenAbility;
 
