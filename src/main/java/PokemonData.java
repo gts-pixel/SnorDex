@@ -1,9 +1,9 @@
-public class PokemonDataVar {
+public class PokemonData {
     public int id;
     public String name, types;
     public int total, hp, atk, def, spA, spD, spe;
 
-    public PokemonDataVar(int id, String name, String types,
+    public PokemonData(int id, String name, String types,
                           int total, int hp, int atk, int def, int spA, int spD, int spe) {
         this.id = id;
         this.name = name;

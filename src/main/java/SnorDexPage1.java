@@ -17,7 +17,6 @@ public class SnorDexPage1 extends javax.swing.JFrame {
         PanelKonten.revalidate();
         PanelKonten.repaint();
     }
-    @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
