@@ -16,7 +16,10 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jSPokeDetail" alignment="0" pref="1141" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jSPokeDetail" min="-2" pref="1156" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -49,98 +52,104 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Group type="103" groupAlignment="1" attributes="0">
-                                              <Component id="AttackText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="HPText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="DefenseText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="SpAText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="SpDText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              <Component id="SpeedText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="AttackText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="HPText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="DefenseText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="SpAText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="SpDText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="SpeedText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="jLDef" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLAtk" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLHP" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLSpA" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLSpD" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLSpe" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                           </Group>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLDef" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLAtk" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLHP" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLSpA" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLSpD" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLSpe" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          <Component id="BaseStatText" min="-2" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="BaseStatText" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jPHP" pref="339" max="32767" attributes="0"/>
+                                          <Component id="jPAtk" max="32767" attributes="0"/>
+                                          <Component id="jPDef" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jPSpA" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jPSpD" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jPSpeed" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <Group type="102" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="565" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="MoveText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="MoveTabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="TypeDefense" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="EvolutionText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
+                                              <Component id="jLTotal" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="jPanel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace min="-2" pref="565" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="TypeText" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="NationalIDText" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="SpeciesText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="HeightText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="WeightText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="AbilityText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="MoveText" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="MoveTabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="TypeDefense" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="ID" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="TypeLabel" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="Species" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="Height" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="Weight" min="-2" max="-2" attributes="0"/>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="Ability" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Component id="HiddenAbility" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
                                               </Group>
                                           </Group>
-                                          <Component id="EvolutionText" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Group type="102" attributes="0">
-                                                      <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
-                                                      <Component id="jLTotal" min="-2" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <Component id="jPanel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="PokedexDataTExt" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="EggGroupText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="GenderRatioText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="CatchRateText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="BaseExpText" alignment="1" min="-2" max="-2" attributes="0"/>
                                               </Group>
-                                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <Group type="103" groupAlignment="1" attributes="0">
-                                                          <Component id="TypeText" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="NationalIDText" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="SpeciesText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="HeightText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="WeightText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="AbilityText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                                      <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="ID" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="TypeLabel" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="Species" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="Height" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="Weight" min="-2" max="-2" attributes="0"/>
-                                                          <Group type="102" alignment="0" attributes="0">
-                                                              <Component id="Ability" min="-2" max="-2" attributes="0"/>
-                                                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                              <Component id="HiddenAbility" min="-2" max="-2" attributes="0"/>
-                                                          </Group>
-                                                      </Group>
-                                                  </Group>
-                                                  <Component id="PokedexDataTExt" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  <Group type="102" attributes="0">
-                                                      <Group type="103" groupAlignment="1" attributes="0">
-                                                          <Component id="EggGroupText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="GenderRatioText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="CatchRateText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="BaseExpText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                                      <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="EggGroup" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="GenderRatio" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="CatchRate" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="BaseExp" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                  </Group>
+                                                  <Component id="EggGroup" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="GenderRatio" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="CatchRate" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="BaseExp" alignment="0" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
-                                      <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace pref="405" max="32767" attributes="0"/>
+                      <EmptySpace pref="463" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -221,34 +230,50 @@
                           <Component id="TypeDefense" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="HPText" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLHP" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="AttackText" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLAtk" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="DefenseText" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLDef" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="SpAText" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLSpA" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="HPText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLHP" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jPHP" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLSpD" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="SpDText" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="AttackText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLAtk" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jPAtk" min="-2" pref="20" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="DefenseText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLDef" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jPDef" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="SpeedText" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLSpe" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="SpAText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLSpA" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jPSpA" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jLSpD" max="32767" attributes="0"/>
+                          <Component id="SpDText" max="32767" attributes="0"/>
+                          <Component id="jPSpD" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="SpeedText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLSpe" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jPSpeed" min="-2" pref="20" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                       <Component id="jLTotal" min="-2" max="-2" attributes="0"/>
@@ -778,6 +803,18 @@
                 </Component>
               </SubComponents>
             </Container>
+            <Component class="javax.swing.JProgressBar" name="jPHP">
+            </Component>
+            <Component class="javax.swing.JProgressBar" name="jPAtk">
+            </Component>
+            <Component class="javax.swing.JProgressBar" name="jPDef">
+            </Component>
+            <Component class="javax.swing.JProgressBar" name="jPSpA">
+            </Component>
+            <Component class="javax.swing.JProgressBar" name="jPSpD">
+            </Component>
+            <Component class="javax.swing.JProgressBar" name="jPSpeed">
+            </Component>
           </SubComponents>
         </Container>
       </SubComponents>
