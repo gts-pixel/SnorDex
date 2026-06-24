@@ -7,6 +7,9 @@
     "height" : "0.7m (2′04″)",
     "weight" : "6.9 kg (15.2 lbs)",
     "ability" : "Overgrow",
+    "abilityGen" : "3",
+    "abilityEffect" : "Overgrow increases the power of Grass-type moves by 50% (1.5×) when the ability-bearer's HP falls below a third of its maximum (known in-game as in a pinch).",
+    "abilitydesc" : "Powers up Grass-type moves in a pinch.",
     "hiddenAbility" : "Chlorophyll",
     "eggGroup" : "Grass, Monster",
     "genderRatio" : "87.5% male, 12.5% female",
@@ -17,7 +20,8 @@
     "def": 49, 
     "spA": 65, 
     "spD": 65, 
-    "spe": 45  
+    "spe": 45,
+    "imageUrl" : "https://img.pokemondb.net/artwork/large/bulbasaur.jpg"
   },
   {
     "id": 4,
