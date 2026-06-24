@@ -155,7 +155,12 @@ public class Pokedex extends javax.swing.JPanel {
         PanelData.setLayout(new BoxLayout(PanelData, BoxLayout.Y_AXIS));
 
         for (PokemonData poke : data_pokemon ) {
-            PokemonCard namaPoke = new PokemonCard(poke);
+            PokemonCard namaPoke = new PokemonCard(
+                poke,
+                selectedPokemon -> {
+                    SnorDexPage1.instance.showPokemonDetail(selectedPokemon);
+                }
+            );
             namaPoke.setMaximumSize(new java.awt.Dimension(Integer.MAX_VALUE, namaPoke.getPreferredSize().height));
             PanelData.add(namaPoke);
             PanelData.add(javax.swing.Box.createVerticalStrut(5));
@@ -174,10 +179,15 @@ public class Pokedex extends javax.swing.JPanel {
         for (PokemonData poke : data_pokemon) {
             boolean matchName = poke.name.toLowerCase().contains(keyword);
             boolean matchID = String.valueOf(poke.id).contains(keyword);
-            boolean matchType = selectedType.equals("All Type") || poke.types.toLowerCase().contains(selectedType.toLowerCase());
+            boolean matchType = selectedType.equals("All Type") || poke.primaryTypes.toLowerCase().contains(selectedType.toLowerCase()) || poke.secondaryTypes.toLowerCase().contains(selectedType.toLowerCase());
 
             if ((matchName || matchID) && matchType) {
-                PokemonCard card = new PokemonCard(poke);
+                PokemonCard card = new PokemonCard(
+                    poke,
+                    selectedPokemon -> {
+                        SnorDexPage1.instance.showPokemonDetail(selectedPokemon);
+                    }
+                );
                 card.setMaximumSize(new java.awt.Dimension(Integer.MAX_VALUE, card.getPreferredSize().height));
                 PanelData.add(card);
                 PanelData.add(javax.swing.Box.createVerticalStrut(5));

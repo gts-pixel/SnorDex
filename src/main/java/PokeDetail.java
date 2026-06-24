@@ -16,6 +16,55 @@ public class PokeDetail extends javax.swing.JPanel {
         initComponents();
     }
 
+    public void setPokemon(PokemonData data) {
+        Name.setText(data.name);
+
+        ID.setText("#" + String.format("%04d", data.id));
+
+        TypeLabel.setText(data.primaryTypes + "/" + data.secondaryTypes);
+
+        Species.setText(data.species);
+
+        Height.setText(data.height);
+
+        Weight.setText(data.weight);
+
+        Ability.setText(data.ability);
+
+        jLHP.setText(String.valueOf(data.hp));
+        jLAtk.setText(String.valueOf(data.atk));
+        jLDef.setText(String.valueOf(data.def));
+        jLSpA.setText(String.valueOf(data.spA));
+        jLSpD.setText(String.valueOf(data.spD));
+        jLSpe.setText(String.valueOf(data.spe));
+        jLTotal.setText(String.valueOf(data.total));
+
+        EggGroup.setText(data.eggGroup);
+        HiddenAbility.setText(data.hiddenAbility);
+        GenderRatio.setText(data.genderRatio);
+        CatchRate.setText(data.catchRate);
+        BaseExp.setText(data.baseExp);
+
+        try {
+            java.net.URL url = new java.net.URL(data.imageUrl);
+
+            javax.swing.ImageIcon icon =
+                    new javax.swing.ImageIcon(url);
+
+            java.awt.Image img =
+                    icon.getImage().getScaledInstance(
+                            300,
+                            300,
+                            java.awt.Image.SCALE_SMOOTH
+                    );
+
+            PokePict.setIcon(new javax.swing.ImageIcon(img));
+            PokePict.setText("");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -27,8 +76,6 @@ public class PokeDetail extends javax.swing.JPanel {
         jSPokeDetail = new javax.swing.JScrollPane();
         PokeDetailJp = new javax.swing.JPanel();
         Name = new javax.swing.JLabel();
-        jPPokePict = new javax.swing.JPanel();
-        PokePict = new javax.swing.JLabel();
         BaseStatText = new javax.swing.JLabel();
         NationalIDText = new javax.swing.JLabel();
         TypeText = new javax.swing.JLabel();
@@ -70,34 +117,15 @@ public class PokeDetail extends javax.swing.JPanel {
         GenderRatio = new javax.swing.JLabel();
         CatchRate = new javax.swing.JLabel();
         BaseExp = new javax.swing.JLabel();
+        HiddenAbility = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        PokePict = new javax.swing.JLabel();
 
         PokeDetailJp.setBackground(new java.awt.Color(29, 32, 38));
 
         Name.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         Name.setForeground(new java.awt.Color(255, 255, 255));
         Name.setText("Pokemon Name");
-
-        jPPokePict.setBackground(new java.awt.Color(29, 32, 38));
-
-        PokePict.setForeground(new java.awt.Color(255, 255, 255));
-        PokePict.setText("PokePictHure");
-
-        javax.swing.GroupLayout jPPokePictLayout = new javax.swing.GroupLayout(jPPokePict);
-        jPPokePict.setLayout(jPPokePictLayout);
-        jPPokePictLayout.setHorizontalGroup(
-            jPPokePictLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPPokePictLayout.createSequentialGroup()
-                .addGap(146, 146, 146)
-                .addComponent(PokePict)
-                .addContainerGap(172, Short.MAX_VALUE))
-        );
-        jPPokePictLayout.setVerticalGroup(
-            jPPokePictLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPPokePictLayout.createSequentialGroup()
-                .addGap(142, 142, 142)
-                .addComponent(PokePict)
-                .addContainerGap(248, Short.MAX_VALUE))
-        );
 
         BaseStatText.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         BaseStatText.setForeground(new java.awt.Color(255, 255, 255));
@@ -261,19 +289,45 @@ public class PokeDetail extends javax.swing.JPanel {
 
         EggGroup.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         EggGroup.setForeground(new java.awt.Color(255, 255, 255));
-        EggGroup.setText("Species");
+        EggGroup.setText("Monster");
 
         GenderRatio.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         GenderRatio.setForeground(new java.awt.Color(255, 255, 255));
-        GenderRatio.setText("Type/Type");
+        GenderRatio.setText("Gender Ratio");
 
         CatchRate.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         CatchRate.setForeground(new java.awt.Color(255, 255, 255));
-        CatchRate.setText("Weight");
+        CatchRate.setText("Catch rate");
 
         BaseExp.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         BaseExp.setForeground(new java.awt.Color(255, 255, 255));
-        BaseExp.setText("Ability");
+        BaseExp.setText("Base Exp");
+
+        HiddenAbility.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        HiddenAbility.setForeground(new java.awt.Color(255, 255, 255));
+        HiddenAbility.setText("Ability");
+
+        jPanel2.setBackground(new java.awt.Color(29, 32, 38));
+
+        PokePict.setForeground(new java.awt.Color(255, 255, 255));
+        PokePict.setText("PokePictHure");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(151, 151, 151)
+                .addComponent(PokePict)
+                .addContainerGap(182, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(164, 164, 164)
+                .addComponent(PokePict)
+                .addContainerGap(202, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout PokeDetailJpLayout = new javax.swing.GroupLayout(PokeDetailJp);
         PokeDetailJp.setLayout(PokeDetailJpLayout);
@@ -285,49 +339,8 @@ public class PokeDetail extends javax.swing.JPanel {
                         .addGap(429, 429, 429)
                         .addComponent(Name))
                     .addGroup(PokeDetailJpLayout.createSequentialGroup()
-                        .addGap(99, 99, 99)
-                        .addComponent(jPPokePict, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(109, 109, 109)
+                        .addGap(41, 41, 41)
                         .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(PokeDetailJpLayout.createSequentialGroup()
-                                .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(TypeText)
-                                    .addComponent(NationalIDText)
-                                    .addComponent(SpeciesText)
-                                    .addComponent(HeightText)
-                                    .addComponent(WeightText)
-                                    .addComponent(AbilityText)
-                                    .addComponent(EggGroupText)
-                                    .addComponent(GenderRatioText)
-                                    .addComponent(CatchRateText)
-                                    .addComponent(BaseExpText))
-                                .addGap(18, 18, 18)
-                                .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(ID)
-                                    .addComponent(TypeLabel)
-                                    .addComponent(Species)
-                                    .addComponent(Height)
-                                    .addComponent(Weight)
-                                    .addComponent(Ability)
-                                    .addComponent(EggGroup)
-                                    .addComponent(GenderRatio)
-                                    .addComponent(CatchRate)
-                                    .addComponent(BaseExp)))
-                            .addGroup(PokeDetailJpLayout.createSequentialGroup()
-                                .addGap(14, 14, 14)
-                                .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(MoveText)
-                                    .addComponent(MoveTabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(PokeDetailJpLayout.createSequentialGroup()
-                                .addGap(9, 9, 9)
-                                .addComponent(PokedexDataTExt))
-                            .addGroup(PokeDetailJpLayout.createSequentialGroup()
-                                .addGap(14, 14, 14)
-                                .addComponent(TypeDefense))))
-                    .addGroup(PokeDetailJpLayout.createSequentialGroup()
-                        .addGap(47, 47, 47)
-                        .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(EvolutionText)
                             .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addGroup(PokeDetailJpLayout.createSequentialGroup()
                                     .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -346,70 +359,117 @@ public class PokeDetail extends javax.swing.JPanel {
                                         .addComponent(jLSpD)
                                         .addComponent(jLSpe))
                                     .addGap(0, 0, Short.MAX_VALUE))
-                                .addComponent(BaseStatText))))
-                    .addGroup(PokeDetailJpLayout.createSequentialGroup()
-                        .addGap(131, 131, 131)
-                        .addComponent(jLTotal)))
-                .addContainerGap(358, Short.MAX_VALUE))
+                                .addComponent(BaseStatText))
+                            .addGroup(PokeDetailJpLayout.createSequentialGroup()
+                                .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(PokeDetailJpLayout.createSequentialGroup()
+                                        .addGap(565, 565, 565)
+                                        .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(MoveText)
+                                            .addComponent(MoveTabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(TypeDefense)))
+                                    .addComponent(EvolutionText)
+                                    .addGroup(PokeDetailJpLayout.createSequentialGroup()
+                                        .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(PokeDetailJpLayout.createSequentialGroup()
+                                                .addGap(84, 84, 84)
+                                                .addComponent(jLTotal))
+                                            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(PokeDetailJpLayout.createSequentialGroup()
+                                                .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                    .addComponent(TypeText)
+                                                    .addComponent(NationalIDText)
+                                                    .addComponent(SpeciesText)
+                                                    .addComponent(HeightText)
+                                                    .addComponent(WeightText)
+                                                    .addComponent(AbilityText))
+                                                .addGap(18, 18, 18)
+                                                .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(ID)
+                                                    .addComponent(TypeLabel)
+                                                    .addComponent(Species)
+                                                    .addComponent(Height)
+                                                    .addComponent(Weight)
+                                                    .addGroup(PokeDetailJpLayout.createSequentialGroup()
+                                                        .addComponent(Ability)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(HiddenAbility))))
+                                            .addComponent(PokedexDataTExt)
+                                            .addGroup(PokeDetailJpLayout.createSequentialGroup()
+                                                .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                    .addComponent(EggGroupText)
+                                                    .addComponent(GenderRatioText)
+                                                    .addComponent(CatchRateText)
+                                                    .addComponent(BaseExpText))
+                                                .addGap(18, 18, 18)
+                                                .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(EggGroup)
+                                                    .addComponent(GenderRatio)
+                                                    .addComponent(CatchRate)
+                                                    .addComponent(BaseExp))))))
+                                .addGap(58, 58, 58)))))
+                .addContainerGap(405, Short.MAX_VALUE))
         );
         PokeDetailJpLayout.setVerticalGroup(
             PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PokeDetailJpLayout.createSequentialGroup()
                 .addGap(63, 63, 63)
                 .addComponent(Name)
-                .addGap(81, 81, 81)
+                .addGap(26, 26, 26)
                 .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PokeDetailJpLayout.createSequentialGroup()
-                        .addComponent(PokedexDataTExt)
-                        .addGap(18, 18, 18)
-                        .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(PokeDetailJpLayout.createSequentialGroup()
-                                .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(PokeDetailJpLayout.createSequentialGroup()
-                                        .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(NationalIDText)
-                                            .addComponent(ID))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(TypeText)
-                                            .addComponent(TypeLabel))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(SpeciesText)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(HeightText))
-                                    .addGroup(PokeDetailJpLayout.createSequentialGroup()
-                                        .addComponent(Species)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(Height)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(PokeDetailJpLayout.createSequentialGroup()
+                            .addComponent(PokedexDataTExt)
+                            .addGap(18, 18, 18)
+                            .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(PokeDetailJpLayout.createSequentialGroup()
+                                    .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(NationalIDText)
+                                        .addComponent(ID))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(TypeText)
+                                        .addComponent(TypeLabel))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(SpeciesText)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(HeightText))
+                                .addGroup(PokeDetailJpLayout.createSequentialGroup()
+                                    .addComponent(Species)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(Height)))
+                            .addGap(14, 14, 14)
+                            .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(WeightText)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(AbilityText))
-                            .addGroup(PokeDetailJpLayout.createSequentialGroup()
-                                .addComponent(Weight)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Ability)))
-                        .addGap(33, 33, 33)
-                        .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(PokeDetailJpLayout.createSequentialGroup()
-                                .addComponent(EggGroupText)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(GenderRatioText)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(CatchRateText)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(BaseExpText))
-                            .addGroup(PokeDetailJpLayout.createSequentialGroup()
-                                .addComponent(EggGroup)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(GenderRatio)
-                                .addGap(64, 64, 64))
-                            .addGroup(PokeDetailJpLayout.createSequentialGroup()
-                                .addComponent(CatchRate)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(BaseExp))))
-                    .addComponent(jPPokePict, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(42, 42, 42)
+                                .addComponent(Weight))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(AbilityText)
+                                .addComponent(Ability)
+                                .addComponent(HiddenAbility))
+                            .addGap(43, 43, 43)
+                            .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(PokeDetailJpLayout.createSequentialGroup()
+                                    .addComponent(EggGroup)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(GenderRatio)
+                                    .addGap(64, 64, 64))
+                                .addGroup(PokeDetailJpLayout.createSequentialGroup()
+                                    .addComponent(CatchRate)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(BaseExp))))
+                        .addGroup(PokeDetailJpLayout.createSequentialGroup()
+                            .addComponent(EggGroupText)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(GenderRatioText)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(CatchRateText)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(BaseExpText))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BaseStatText)
                     .addComponent(TypeDefense))
@@ -430,9 +490,9 @@ public class PokeDetail extends javax.swing.JPanel {
                     .addComponent(SpAText)
                     .addComponent(jLSpA))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SpDText)
-                    .addComponent(jLSpD))
+                .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLSpD)
+                    .addComponent(SpDText))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(PokeDetailJpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(SpeedText)
@@ -445,7 +505,7 @@ public class PokeDetail extends javax.swing.JPanel {
                     .addComponent(MoveText))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(MoveTabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addGap(361, 361, 361))
         );
 
         jSPokeDetail.setViewportView(PokeDetailJp);
@@ -481,6 +541,7 @@ public class PokeDetail extends javax.swing.JPanel {
     private javax.swing.JLabel HPText;
     private javax.swing.JLabel Height;
     private javax.swing.JLabel HeightText;
+    private javax.swing.JLabel HiddenAbility;
     private javax.swing.JLabel ID;
     private javax.swing.JPanel MoveTabel;
     private javax.swing.JLabel MoveText;
@@ -506,7 +567,7 @@ public class PokeDetail extends javax.swing.JPanel {
     private javax.swing.JLabel jLSpD;
     private javax.swing.JLabel jLSpe;
     private javax.swing.JLabel jLTotal;
-    private javax.swing.JPanel jPPokePict;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jSPokeDetail;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;

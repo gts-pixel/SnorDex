@@ -16,8 +16,13 @@ public class SnorDexPage1 extends javax.swing.JFrame {
 
         PanelKonten.revalidate();
         PanelKonten.repaint();
+
+        instance = this;
     }
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+
+    public static SnorDexPage1 instance;
+
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -272,6 +277,22 @@ public class SnorDexPage1 extends javax.swing.JFrame {
         PanelKonten.revalidate();
         PanelKonten.repaint();
     }//GEN-LAST:event_NatureDexActionPerformed
+
+    public void showPokemonDetail(PokemonData data){
+
+        PanelKonten.removeAll();
+
+        PanelKonten.setLayout(new BorderLayout());
+
+        PokeDetail detail = new PokeDetail();
+
+        detail.setPokemon(data);
+
+        PanelKonten.add(detail, BorderLayout.CENTER);
+
+        PanelKonten.revalidate();
+        PanelKonten.repaint();
+    }
 
     /**
      * @param args the command line arguments
