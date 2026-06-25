@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 
+import javax.swing.BoxLayout;
+
 /**
  *
  * @author REFIKA
@@ -12,8 +14,11 @@ public class MoveDex extends javax.swing.JPanel {
     /**
      * Creates new form MoveDex
      */
+    MoveData[] data_move = MoveLoader.loadAll();
+
     public MoveDex() {
         initComponents();
+        filterData();
     }
 
     /**
@@ -106,14 +111,13 @@ public class MoveDex extends javax.swing.JPanel {
                 .addComponent(CBType, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(94, 94, 94))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(MoveOption, javax.swing.GroupLayout.PREFERRED_SIZE, 1063, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(429, 429, 429)
-                        .addComponent(LogoText)))
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addGap(429, 429, 429)
+                .addComponent(LogoText)
+                .addContainerGap(449, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(MoveOption, javax.swing.GroupLayout.PREFERRED_SIZE, 1063, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -130,9 +134,9 @@ public class MoveDex extends javax.swing.JPanel {
                         .addComponent(SearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(Type)
                         .addComponent(CBType, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(MoveOption, javax.swing.GroupLayout.PREFERRED_SIZE, 810, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(135, Short.MAX_VALUE))
+                .addContainerGap(147, Short.MAX_VALUE))
         );
 
         jsMoveDex.setViewportView(jPanel1);
@@ -148,6 +152,32 @@ public class MoveDex extends javax.swing.JPanel {
             .addComponent(jsMoveDex, javax.swing.GroupLayout.DEFAULT_SIZE, 1080, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void filterData() {
+        String keyword = SearchField.getText().trim().toLowerCase();
+        String selectedType = CBType.getSelectedItem().toString().trim();
+
+        PanelMove.removeAll();
+        PanelMove.setLayout(new BoxLayout(PanelMove, BoxLayout.Y_AXIS));
+
+        for (MoveData move : data_move) {
+            boolean matchName = move.move != null && move.move.toLowerCase().contains(keyword);
+            boolean matchID = String.valueOf(move.moveId).contains(keyword);
+            boolean matchType = selectedType.equals("All Type") || (move.type != null && move.type.toLowerCase().contains(selectedType.toLowerCase()));
+
+            if ((matchName || matchID) && matchType) {
+                MoveCard card = new MoveCard(
+                    move,
+                    selectedMove -> {
+                        SnorDexPage1.instance.showMoveDetail(selectedMove);
+                    }
+                );
+                card.setMaximumSize(new java.awt.Dimension(Integer.MAX_VALUE, card.getPreferredSize().height));
+                PanelMove.add(card);
+                PanelMove.add(javax.swing.Box.createVerticalStrut(5));
+            }
+        }
+    }
 
     private void SearchFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchFieldActionPerformed
         

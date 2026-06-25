@@ -282,8 +282,10 @@ public class SnorDexPage1 extends javax.swing.JFrame {
         PanelKonten.repaint();
     }//GEN-LAST:event_NatureDexActionPerformed
 
+    public void showMoveDetail(MoveData data) {
+        // tampilkan panel detail move di PanelKonten
+    }
     
-
     public void showPokemonDetail(PokemonData data){
 
         PanelKonten.removeAll();
