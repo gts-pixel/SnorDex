@@ -1,6 +1,8 @@
 import java.awt.*;
 
 public class SnorDexPage1 extends javax.swing.JFrame {
+    public static TypeChartLoader typeLoader;
+
     public SnorDexPage1() {
         initComponents();
         
@@ -18,6 +20,8 @@ public class SnorDexPage1 extends javax.swing.JFrame {
         PanelKonten.repaint();
 
         instance = this;
+
+        typeLoader = TypeChartLoader.load();
     }
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
 
@@ -278,13 +282,17 @@ public class SnorDexPage1 extends javax.swing.JFrame {
         PanelKonten.repaint();
     }//GEN-LAST:event_NatureDexActionPerformed
 
+    
+
     public void showPokemonDetail(PokemonData data){
 
         PanelKonten.removeAll();
 
         PanelKonten.setLayout(new BorderLayout());
 
-        PokeDetail detail = new PokeDetail();
+        typeLoader = TypeChartLoader.loadFromJson("TypeChart.json");
+
+        PokeDetail detail = new PokeDetail(typeLoader);
 
         detail.setPokemon(data);
 

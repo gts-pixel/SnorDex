@@ -33,6 +33,9 @@
     "height": "0.6m (2′00″)",
     "weight": "8.5 kg (18.7 lbs)",
     "ability": "Blaze",
+    "abilityGen": "3",
+    "abilityEffect": "Blaze increases the power of Fire-type moves by 50% (1.5×) when the ability-bearer's HP falls below a third of its maximum (known in-game as in a pinch).",
+    "abilitydesc": "Powers up Fire-type moves in a pinch.",
     "hiddenAbility": "Solar Power",
     "eggGroup": "Monster, Dragon",
     "genderRatio": "87.5% male, 12.5% female",
@@ -43,7 +46,8 @@
     "def": 43,
     "spA": 60,
     "spD": 50,
-    "spe": 65
+    "spe": 65,
+    "imageUrl" : "https://img.pokemondb.net/artwork/large/charmander.jpg"
   },
    {
     "id": 7,
@@ -54,6 +58,9 @@
     "height": "0.5m (1′08″)",
     "weight": "9.0 kg (19.8 lbs)",
     "ability": "Torrent",
+    "abilityGen": "3",
+    "abilityEffect": "Torrent increases the power of Water-type moves by 50% (1.5×) when the ability-bearer's HP falls below a third of its maximum (known in-game as in a pinch).",
+    "abilitydesc": "Powers up Water-type moves in a pinch.",
     "hiddenAbility": "Rain Dish",
     "eggGroup": "Monster, Water 1",
     "genderRatio": "87.5% male, 12.5% female",
@@ -64,7 +71,8 @@
     "def": 65,
     "spA": 50,
     "spD": 64,
-    "spe": 43
+    "spe": 43,
+    "imageUrl" : "https://img.pokemondb.net/artwork/large/squirtle.jpg"
    },
     {
     "id": 25,
@@ -75,6 +83,9 @@
     "height": "0.4m (1′04″)",
     "weight": "6.0 kg (13.2 lbs)",
     "ability": "Static",
+    "abilityGen": "3",
+    "abilityEffect": "Static has a 30% chance of paralyzing a Pokémon",
+    "abilitydesc": "May cause paralysis if touched.",
     "hiddenAbility": "Lightning Rod",
     "eggGroup": "Field, Fairy",
     "genderRatio": "50% male, 50% female",
@@ -85,7 +96,8 @@
     "def": 40,
     "spA": 50,
     "spD": 50,
-    "spe": 90
+    "spe": 90,
+    "imageUrl" : "https://img.pokemondb.net/artwork/large/pikachu.jpg"
     },
     {
     "id": 39,
@@ -96,6 +108,9 @@
     "height": "0.5m (1′08″)",
     "weight": "5.5 kg (12.1 lbs)",
     "ability": "Cute Charm",
+    "abilityGen": "3",
+    "abilityEffect": "Cute Charm has a 30% chance of making a Pokémon friendly.",
+    "abilitydesc": "Raises the opponent's Attack when it's hit by a move.",
     "hiddenAbility": "Friend Guard",
     "eggGroup": "Fairy",
     "genderRatio": "25% male, 75% female",
@@ -106,7 +121,8 @@
     "def": 20,
     "spA": 45,
     "spD": 25,
-    "spe": 20
+    "spe": 20,
+    "imageUrl" : "https://img.pokemondb.net/artwork/large/jigglypuff.jpg"
     },
     {
     "id": 52,
@@ -117,6 +133,9 @@
     "height": "0.4m (1′04″)",
     "weight": "4.2 kg (9.3 lbs)",
     "ability": "Pickup",
+    "abilityGen": "3",
+    "abilityEffect": "Pickup has a 10% chance of finding an item after battle",
+    "abilitydesc" : "May pick up items.",
     "hiddenAbility": "Unnerve",
     "eggGroup": "Field",
     "genderRatio": "50% male, 50% female",
@@ -127,7 +146,8 @@
     "def": 35,
     "spA": 40,
     "spD": 40,
-    "spe": 90
+    "spe": 90,
+    "imageUrl" : "https://img.pokemondb.net/artwork/large/meowth.jpg"
     },
     {
     "id": 133,
@@ -138,6 +158,9 @@
     "height": "0.3m (1′00″)",
     "weight": "6.5 kg (14.3 lbs)",
     "ability": "Run Away",
+    "abilityGen": "3",
+    "abilityEffect": "Run Away allows the Pokémon to escape from wild battles without fail.",
+    "abilitydesc" : "Enables a sure getaway.",
     "hiddenAbility": "Anticipation",
     "eggGroup": "Field",
     "genderRatio": "87.5% male, 12.5% female",
@@ -148,7 +171,8 @@
     "def": 50,
     "spA": 45,
     "spD": 65,
-    "spe": 55
+    "spe": 55,
+    "imageUrl" : "https://img.pokemondb.net/artwork/large/eevee.jpg"
     },
     {
     "id": 143,
@@ -159,6 +183,9 @@
     "height": "2.1m (6′11″)",
     "weight": "460.0 kg (1014.1 lbs)",
     "ability": "Immunity",
+    "abilityGen": "3",
+    "abilityEffect": "Immunity prevents the Pokémon from being poisoned.",
+    "abilitydesc": "Prevents poisoning.",
     "hiddenAbility": "Gluttony",
     "eggGroup": "Monster",
     "genderRatio": "87.5% male, 12.5% female",
@@ -169,7 +196,8 @@
     "def": 65,
     "spA": 65,
     "spD": 110,
-    "spe": 30
+    "spe": 30,
+    "imageUrl" : "https://img.pokemondb.net/artwork/large/snorlax.jpg"
     },
     {
     "id": 152,
@@ -180,6 +208,9 @@
     "height": "0.9m (2′11″)",
     "weight": "6.4 kg (14.1 lbs)",
     "ability": "Overgrow",
+    "abilityGen": "3",
+    "abilityEffect": "Overgrow boosts the power of Grass-type moves when the Pokémon's HP is low.",
+    "abilitydesc": "Boosts Grass-type moves when HP is low.",
     "hiddenAbility": "Leaf Guard",
     "eggGroup": "Monster, Grass",
     "genderRatio": "87.5% male, 12.5% female",
@@ -190,7 +221,8 @@
     "def": 65,
     "spA": 49,
     "spD": 65,
-    "spe": 45
+    "spe": 45,
+    "imageUrl" : "https://img.pokemondb.net/artwork/large/chikorita.jpg"
     },
     {
     "id": 155,
@@ -201,6 +233,9 @@
     "height": "0.5m (1′08″)",
     "weight": "7.9 kg (17.4 lbs)",
     "ability": "Blaze",
+    "abilityGen": "3",
+    "abilityEffect": "Blaze boosts the power of Fire-type moves when the Pokémon's HP is low.",
+    "abilitydesc": "Boosts Fire-type moves when HP is low.",
     "hiddenAbility": "Flash Fire",
     "eggGroup": "Field",
     "genderRatio": "87.5% male, 12.5% female",
@@ -211,6 +246,32 @@
     "def": 43,
     "spA": 60,
     "spD": 50,
-    "spe": 65
+    "spe": 65,
+    "imageUrl" : "https://img.pokemondb.net/artwork/large/cyndaquil.jpg"
+    },
+    {
+    "id": 158,
+    "name": "Totodile",
+    "primaryTypes": "Water",
+    "secondaryTypes": "",
+    "species": "Crocodile Pokemon",
+    "height": "0.6m (1′10″)",
+    "weight": "9.5 kg (20.9 lbs)",
+    "ability": "Torrent",
+    "abilityGen": "3",
+    "abilityEffect": "Torrent boosts the power of Water-type moves when the Pokémon's HP is low.",
+    "abilitydesc": "Boosts Water-type moves when HP is low.",
+    "hiddenAbility": "Sheer Force",
+    "eggGroup": "Monster, Water 1",
+    "genderRatio": "87.5% male, 12.5% female",
+    "catchRate": "45 (5.9% with PokéBall, full HP)",
+    "baseExp": "63",
+    "hp": 50,
+    "atk": 65,
+    "def": 64,
+    "spA": 44,
+    "spD": 48,
+    "spe": 43,
+    "imageUrl" : "https://img.pokemondb.net/artwork/large/totodile.jpg"
     }
 ]

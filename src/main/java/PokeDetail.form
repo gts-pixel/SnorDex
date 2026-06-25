@@ -52,48 +52,6 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                          <Group type="102" alignment="1" attributes="0">
-                                              <Group type="103" groupAlignment="1" attributes="0">
-                                                  <Component id="AttackText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="HPText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="DefenseText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="SpAText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="SpDText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="SpeedText" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="jLDef" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jLAtk" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jLHP" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jLSpA" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jLSpD" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jLSpe" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                          </Group>
-                                          <Component id="BaseStatText" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jPHP" pref="339" max="32767" attributes="0"/>
-                                          <Component id="jPAtk" max="32767" attributes="0"/>
-                                          <Component id="jPDef" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jPSpA" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jPSpD" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="jPSpeed" alignment="0" max="32767" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="565" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="MoveText" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="MoveTabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="TypeDefense" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
                                   <Component id="EvolutionText" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
@@ -144,6 +102,49 @@
                                                   <Component id="BaseExp" alignment="0" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Component id="AttackText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="HPText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="DefenseText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="SpAText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="SpDText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="SpeedText" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="jLDef" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLAtk" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLHP" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLSpA" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLSpD" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLSpe" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Component id="BaseStatText" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jPHP" pref="339" max="32767" attributes="0"/>
+                                          <Component id="jPAtk" max="32767" attributes="0"/>
+                                          <Component id="jPDef" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jPSpA" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jPSpD" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jPSpeed" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLWeakness" min="-2" max="-2" attributes="0"/>
+                                          <Component id="MoveText" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="MoveTabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="TypeDefense" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLResistents" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLImmune" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -230,12 +231,15 @@
                           <Component id="TypeDefense" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="HPText" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLHP" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="HPText" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLHP" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jPHP" max="32767" attributes="0"/>
                           </Group>
-                          <Component id="jPHP" max="32767" attributes="0"/>
+                          <Component id="jLWeakness" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -246,12 +250,15 @@
                           <Component id="jPAtk" min="-2" pref="20" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="DefenseText" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLDef" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="DefenseText" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLDef" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jPDef" max="32767" attributes="0"/>
                           </Group>
-                          <Component id="jPDef" max="32767" attributes="0"/>
+                          <Component id="jLResistents" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -262,10 +269,13 @@
                           <Component id="jPSpA" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jLSpD" max="32767" attributes="0"/>
-                          <Component id="SpDText" max="32767" attributes="0"/>
-                          <Component id="jPSpD" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jLSpD" max="32767" attributes="0"/>
+                              <Component id="SpDText" max="32767" attributes="0"/>
+                              <Component id="jPSpD" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="jLImmune" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -814,6 +824,30 @@
             <Component class="javax.swing.JProgressBar" name="jPSpD">
             </Component>
             <Component class="javax.swing.JProgressBar" name="jPSpeed">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLWeakness">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Weakness : "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLResistents">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Resistents :"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLImmune">
+              <Properties>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Immune :"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
