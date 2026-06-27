@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 
+import javax.swing.BoxLayout;
+
 /**
  *
  * @author REFIKA
@@ -14,7 +16,11 @@ public class AbilityDex extends javax.swing.JPanel {
      */
     public AbilityDex() {
         initComponents();
+
+        tampilKanData();
     }
+
+    PokemonData[] data_pokemon = PokemonLoader.loadAll();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -68,17 +74,17 @@ public class AbilityDex extends javax.swing.JPanel {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(287, 287, 287)
-                        .addComponent(ScNameField)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(SearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 489, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(412, 412, 412)
                         .addComponent(LogoText))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(118, 118, 118)
-                        .addComponent(jSAbilities, javax.swing.GroupLayout.PREFERRED_SIZE, 918, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(358, Short.MAX_VALUE))
+                        .addGap(114, 114, 114)
+                        .addComponent(jSAbilities, javax.swing.GroupLayout.PREFERRED_SIZE, 918, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(278, 278, 278)
+                        .addComponent(ScNameField)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(SearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 489, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(362, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -89,9 +95,9 @@ public class AbilityDex extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ScNameField)
                     .addComponent(SearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(42, 42, 42)
+                .addGap(43, 43, 43)
                 .addComponent(jSAbilities, javax.swing.GroupLayout.PREFERRED_SIZE, 763, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(100, Short.MAX_VALUE))
+                .addContainerGap(99, Short.MAX_VALUE))
         );
 
         jSAbilityDex.setViewportView(jPanel1);
@@ -107,6 +113,21 @@ public class AbilityDex extends javax.swing.JPanel {
             .addComponent(jSAbilityDex, javax.swing.GroupLayout.DEFAULT_SIZE, 1080, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void tampilKanData() {
+        PanelAbility.removeAll();
+        PanelAbility.setLayout(new BoxLayout(PanelAbility, BoxLayout.Y_AXIS));
+
+        for (PokemonData poke : data_pokemon ) {
+            AbilityCard abilityCard = new AbilityCard();
+            abilityCard.setAbility(poke);
+            abilityCard.setMaximumSize(new java.awt.Dimension(Integer.MAX_VALUE, abilityCard.getPreferredSize().height));
+            PanelAbility.add(abilityCard);
+            PanelAbility.add(javax.swing.Box.createVerticalStrut(5));
+        }
+        PanelAbility.revalidate();
+        PanelAbility.repaint();
+    }
 
     private void SearchFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchFieldActionPerformed
         

@@ -180,15 +180,15 @@ public class MoveDex extends javax.swing.JPanel {
     }
 
     private void SearchFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SearchFieldActionPerformed
-        
+        filterData();
     }//GEN-LAST:event_SearchFieldActionPerformed
 
     private void CBTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBTypeActionPerformed
-        
+        filterData();
     }//GEN-LAST:event_CBTypeActionPerformed
 
     private void CBCategoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBCategoryActionPerformed
-        
+        filterData();
     }//GEN-LAST:event_CBCategoryActionPerformed
 
 
